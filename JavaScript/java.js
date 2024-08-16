@@ -57,13 +57,13 @@ let pares= esPar(numeropar);
 
 if(pares==true)
 {
-    let espar1= "El numero es par";
-    console.log(espar1);
+   
+    console.log("Es par");
 }
 else
 {
-    let noespar= "El numero no es par";
-    console.log(noespar);
+    
+    console.log("No es par");
 }*/
 
 
