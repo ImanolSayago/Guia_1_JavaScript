@@ -264,3 +264,148 @@ function obtenerinfo(Persona)
 
 let informacion = obtenerinfo(persona1);
 console.log(informacion);*/
+
+/*ejercicio_15
+
+let arreglonro=[1,2,3,4,5];
+function duplicarnrosarray(arreglo)
+{
+    let i=0;
+    let j;
+    let arreglodupli=[];
+    for(i=0;i<arreglo.length;i++)
+    {
+        
+        j = (arreglo[i]*2);
+        arreglodupli[i]=j;
+    }
+    return arreglodupli;
+}
+let arregloduplicado= duplicarnrosarray(arreglonro);
+
+console.log(arreglonro);
+console.log(arregloduplicado);*/
+
+/*ejercicio_16
+
+function invertirCadena(cadena)
+{
+    return cadena.split("").reverse().join("");
+}
+
+let texto = "Imanol capo";
+
+let textoInv= invertirCadena(texto);
+
+console.log("Mostrando texto normal");
+console.log(texto);
+
+console.log("Mostrando el texto invertido");
+console.log(textoInv);*/
+
+/*ejercicio_17
+
+let arreglopalabras= ["labo","laboratorio","otra"];
+function filtrarporLongitud(nro1, arreglo)
+{
+    let i=0;
+    let arreglopalabrasnueva= [];
+    for(i=0;i<arreglo.length;i++)
+    {
+        let palabra = arreglo[i];
+        if(palabra.length>nro1)
+        {
+            arreglopalabrasnueva.push(palabra);
+        }
+    }
+    return arreglopalabrasnueva;
+}
+
+let arreglonuevopalabras= filtrarporLongitud(8,arreglopalabras);
+console.log("Mostrando el arreglo de palabras completo: ");
+console.log(arreglopalabras);
+
+console.log("Mostrando el arreglo de palabras nuevo(el filtro en este caso es 8 letras)");
+console.log(arreglonuevopalabras);*/
+
+/*Ejercicio_18
+
+
+
+                    ///Desde el ejercicio 18 al 20 se trabaja con el mismo arreglo///
+
+                    
+function crearEstudiante(nombres,edads,promedios)
+{
+    let estudiante=
+    {
+        Nombre: nombres,
+        edad: edads,
+        promedio:promedios,
+    };
+    return estudiante;
+}
+
+let estudiante1= crearEstudiante("Imanol",20,8.5);
+let estudiante2= crearEstudiante("Lucas",23,9);
+let estudiante3= crearEstudiante("Nicolas",20,8.7);
+
+let arregloestudiantes= [estudiante1,estudiante2,estudiante3];
+console.log(arregloestudiantes);
+
+/*ejercicio19
+
+function buscarestudiantePorNombre(arregloestudiante,nombre)
+{
+
+    let flag =0;
+    let i = 0;
+    while(i<arregloestudiante.length && flag == 0 )
+    {
+        let nombreencontrado= arregloestudiante[i].Nombre;
+        if(nombreencontrado==nombre)
+        {
+            flag=1;
+            return arregloestudiante[i];
+        }
+        i++;
+    }
+}
+
+let estudianteencontrado= buscarestudiantePorNombre(arregloestudiantes,"Imanol");
+
+if(estudianteencontrado!=null)
+{
+    console.log("Alumno encontrado con exito: ");
+    console.log("Nombre: ",estudianteencontrado.Nombre);
+    console.log("Edad: ",estudianteencontrado.edad);
+    console.log("Promedio: ",estudianteencontrado.promedio);
+}
+else
+{
+    console.log("El estudiante con ese nombre no se encuentra en el arreglo");
+}
+
+
+/*ejercicio_20
+let promedio_general;
+
+
+function promedioTodosAlumnos(arregloestudiantess)
+{
+    let i = 0;
+    let promedios=0;
+    for(i=0;i<arregloestudiantess.length;i++)
+    {
+        promedios = promedios + arregloestudiantess[i].promedio;
+    }
+    promedios = promedios/arregloestudiantess.length;
+    return promedios;
+}
+
+ promedio_general = promedioTodosAlumnos(arregloestudiantes);
+
+ console.log("El promedio de la suma de todos los alumnos esde: ",promedio_general);
+
+ */
+
